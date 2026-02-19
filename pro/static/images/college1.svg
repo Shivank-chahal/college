@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a365d"/>
+      <stop offset="100%" style="stop-color:#2c5282"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg1)"/>
+  <rect x="80" y="100" width="240" height="120" rx="8" fill="#d69e2e" opacity="0.3"/>
+  <rect x="100" y="120" width="80" height="80" fill="#d69e2e" opacity="0.5"/>
+  <rect x="200" y="120" width="80" height="80" fill="#ecc94b" opacity="0.4"/>
+  <rect x="300" y="120" width="60" height="80" fill="#d69e2e" opacity="0.5"/>
+  <text x="200" y="260" fill="#94a3b8" font-family="Arial" font-size="14" text-anchor="middle">Main Building - Add your photo</text>
+</svg>

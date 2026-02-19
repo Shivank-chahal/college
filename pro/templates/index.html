@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek College Bijnor - Excellence in Education</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 3D Background Canvas -->
+    <div id="canvas-3d"></div>
+
+    <!-- Main Content -->
+    <main class="content-wrapper">
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="hero-content">
+                <h1 class="college-name" data-3d="title">VIVEK COLLEGE<br><span>BIJNOR</span></h1>
+                <p class="tagline">Excellence in Teacher Education Since Inception</p>
+                <div class="scroll-indicator">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- College Images Gallery - 3D Perspective -->
+        <section class="gallery-section">
+            <h2 class="section-title">Our Campus</h2>
+            <div class="gallery-3d">
+                <div class="gallery-track">
+                    <div class="gallery-item gallery-item-1">
+                        <div class="card-3d">
+                            <div class="card-face front">
+                                <img src="{{ url_for('static', filename='images/college1.svg') }}" alt="Vivek College Campus - Main Building">
+                                <span class="img-label">Main Building</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item gallery-item-2">
+                        <div class="card-3d">
+                            <div class="card-face front">
+                                <img src="{{ url_for('static', filename='images/college2.svg') }}" alt="Vivek College Campus - Facilities">
+                                <span class="img-label">Campus Facilities</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item gallery-item-3">
+                        <div class="card-3d">
+                            <div class="card-face front">
+                                <img src="{{ url_for('static', filename='images/college3.svg') }}" alt="Vivek College Campus - Learning Environment">
+                                <span class="img-label">Learning Environment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section - 3D Flip Cards -->
+        <section class="courses-section">
+            <h2 class="section-title">Our Programs</h2>
+            <div class="courses-grid">
+                <div class="course-card" data-course="1">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="course-icon">📚</div>
+                            <h3>D.E.D Special Education</h3>
+                            <p>Diploma in Education - Specialized in Special Education</p>
+                            <span class="flip-hint">Hover to learn more</span>
+                        </div>
+                        <div class="card-back">
+                            <h3>D.E.D Special Education</h3>
+                            <p>Comprehensive training for educators to support students with special needs. Build a rewarding career in inclusive education.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card" data-course="2">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="course-icon">♥️</div>
+                            <h3>Children Disabilities</h3>
+                            <p>Specialized program for supporting children with disabilities</p>
+                            <span class="flip-hint">Hover to learn more</span>
+                        </div>
+                        <div class="card-back">
+                            <h3>Children Disabilities</h3>
+                            <p>Expert training in understanding, assessing, and supporting children with various disabilities. Make a real difference.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card" data-course="3">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="course-icon">🌟</div>
+                            <h3>DLED</h3>
+                            <p>Diploma in Elementary Education</p>
+                            <span class="flip-hint">Hover to learn more</span>
+                        </div>
+                        <div class="card-back">
+                            <h3>DLED</h3>
+                            <p>Diploma in Elementary Education - Prepare for a career in primary education with our accredited DLED program.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <h3>VIVEK COLLEGE BIJNOR</h3>
+                <p>Shaping Future Educators · Building Inclusive Communities</p>
+                <p class="address">Bijnor, Uttar Pradesh, India</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
